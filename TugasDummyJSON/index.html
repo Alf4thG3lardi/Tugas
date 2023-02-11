@@ -12,32 +12,54 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="m-4">Tugas ft. DummyJSON</h1>
-        <div class="m-4">
-            <button class="btn btn-primary" id="get">GET</button>
-            <button class="btn btn-secondary" id="show">SHOW</button>
-            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="post">POST</button>
+        <div class="row">
+            <div class="col">
+                <h1 class="m-4">Menu Item</h1>
+                <div class="m-4">
+                    <button class="btn btn-primary" id="get">GET</button>
+                    <button class="btn btn-secondary" id="show">SHOW</button>
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" id="post">POST</button>
+                </div>
+            </div>
+            <div class="col">
+                <h1 class="m-4">Custommer</h1>
+                <div class="m-4">
+                    <button class="btn btn-primary" id="get-custom">GET</button>
+                    <button class="btn btn-secondary" id="show-custom">SHOW</button>
+                    <button class="btn btn-success" id="post-custom">POST</button>
+                </div>
+            </div>
+            <div class="col">
+                <h1 class="m-4">Menu Order</h1>
+                <div class="m-4">
+                    <button class="btn btn-primary" id="get-order">GET</button>
+                    <button class="btn btn-secondary" id="show">SHOW</button>
+                    <button class="btn btn-success" id="post">POST</button>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col">
                 <table id="table" class="table table-striped-columns">
+                    <thead id="thead">
+                    </thead>
                     <tbody id="tbody">
                     </tbody>
                 </table>            
             </div>
             <div class="col">
-                    <div id="isi"></div>
+                <div id="isi"></div>
             </div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Input Data</h1>
+                <h1 class="modal-title fs-5 title" id="exampleModalLabel">Input Data</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="" class="form">
+                    <form action="" class="form" id="form">
                         <input type="number" name="" hidden id="id">
 
                         <label class="form-label mt-4" for="">Title</label>
